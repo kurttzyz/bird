@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="icon" href="{% static 'images/flappybet.jpg' %}" type="image/x-icon">
+  <title>
+    {% block title %}
+    Flappybet.gg
+    {% endblock %}
+  </title>
+</head>
+<body>
+  <header class="header bg-dark text-white">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Logo -->
+      <a href="/" class="logo-container">
+        <img src="{% static 'images/flappybet.jpg' %}" alt="Flappybet Logo" class="logo">
+        <h1>Flappybet.gg</h1>
+      </a>
+      
+      <!-- Hamburger Menu -->
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <!-- Navigation Links -->
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="#game" class="nav-link">Games</a></li>
+          <li><a href="#referral" class="nav-link">Rewards</a></li>
+          <li><a href="#customer-service" class="nav-link">Customer Service</a></li>
+          <li><a href="#FAQ" class="nav-link">FAQ's</a></li>
+          <li><a href="/play2win.register/" class="nav-link">Register</a></li>
+          <li><a href="/Home/login/" class="nav-link">Log In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <footer class="footer bg-dark text-white text-center">
+    <p>&copy; 2025 Flappybet.gg | All rights reserved</p>
+  </footer>
+
+  <script>
+    // JavaScript for Hamburger Toggle
+    document.getElementById('hamburger').addEventListener('click', function () {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('open');
+    });
+  </script>
+
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

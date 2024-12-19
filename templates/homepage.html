@@ -1,0 +1,287 @@
+{% extends 'base2.html' %}
+<!DOCTYPE html>
+{% load static %}
+
+    {% block title %}
+    Flappybet.gg
+    {% endblock %}
+    
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/homepage-style.css' %}">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+</head>
+<body>
+
+ 
+  <!-- Home Section -->
+  <div id="home" class="section home">
+      <h1 style="color:white;">Welcome to Flappybet.gg, Play to earn real money!</h1>
+      
+      <!-- Ads Container -->
+      <div class="ads-container">
+        <!-- Ad 1 -->
+        <div class="ad">
+          <img src="{% static 'images/ad.jpg' %}" alt="Ad 1">
+        </div>
+    
+        <!-- Ad 2 -->
+        <div class="ad">
+          <img src="{% static 'images/ad2.jpg' %}" alt="Ad 2">
+        </div>
+    
+        <!-- Ad 3 -->
+        <div class="ad">
+          <img src="{% static 'images/ad3.jpg' %}" alt="Ad 3">
+        </div>
+  </div>
+  
+    <!-- Social Media Section -->
+      <div class="social-media">
+        <h2>Connect with Us on Social Media</h2>
+          <p>Follow us to stay updated on the latest news, games, and rewards!</p>
+            <div class="social-icons">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/flappybet" target="_blank" class="social-link">
+                <img src="{% static 'images/facebook.jpg' %}" alt="Facebook">
+              </a>
+
+              <!-- Twitter -->
+              <a href="https://www.twitter.com/flappybet" target="_blank" class="social-link">
+                <img src="{% static 'images/tiktok.jpg' %}" alt="Tiktok">
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/flappybet" target="_blank" class="social-link">
+                <img src="{% static 'images/ig.jpg' %}" alt="Instagram">
+              </a>
+
+              <!-- YouTube -->
+              <a href="https://www.youtube.com/flappybet" target="_blank" class="social-link">
+                <img src="{% static 'images/telegram.jpg' %}" alt="Telegram">
+              </a>
+          </div>
+        </div>
+      </div>
+
+  <!-- GAME SECTION -->
+    <div id="game" class="section game">
+      <h1 stylee="color:white;">Game</h1>
+        <p style="color:white;">Discover fun and exciting games designed to test your skills and luck.</p>
+    
+          <!-- Game Cards Container -->
+          <div class="game-cards">
+            <!-- Card 1 -->
+            <div class="card">
+              <a href="/Home/login"><img src="{% static 'images/ads.jpg' %}" alt="Flappy Game" class="card-image"></a>
+              <div class="card-content">
+                <h2>Flappy Game</h2>
+                <p>Navigate the bird through obstacles and win big rewards.</p>
+              </div>
+            </div>
+  
+      <!-- Card 2 -->
+            <div class="card">
+              <a href="/Home/login"><img src="{% static 'images/mines.jpg' %}" alt="Spin the Wheel" class="card-image"></a>
+              <div class="card-content">
+                <h2>Tap the bird</h2>
+                <p>Test your luck and grab exciting jackpots with every spin.</p>
+              </div>
+            </div>
+  
+      <!-- Card 3 -->
+            <div class="card">
+              <a href="/Home/login"><img src="{% static 'images/blackjack.jpg' %}" alt="Card Games" class="card-image"></a>
+              <div class="card-content">
+                <h2>Card Games</h2>
+                <p>Put your strategy to the test and win points in card challenges.</p>
+              </div>
+            </div>
+          </div>
+        <a href="#referral">Learn About Rewards</a>
+    </div>
+
+      <div id="FAQ" class="section FAQ">
+            <h1>Frequently Asked Questions (FAQ)</h1>
+              <p>Here’s where we share all the extra details. Thank you for scrolling all the way down!</p>
+                <!-- FAQ Dropdowns -->
+                    <div class="faq-item">
+                      <button class="faq-question">How does the deposit work?</button>
+                      <div class="faq-answer">
+                        <p>Depositing is simple. Navigate to the deposit page, choose your preferred payment method, and follow the on-screen instructions. Your funds will be credited instantly.</p>
+                      </div>
+                    </div>
+
+                <div class="faq-item">
+                  <button class="faq-question">How do withdrawals work?</button>
+                  <div class="faq-answer">
+                    <p>To withdraw, go to the withdrawal section in your account, select your payout method, and enter the desired amount. Withdrawals are processed within 24-48 hours.</p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question">Is my personal information secure?</button>
+                  <div class="faq-answer">
+                    <p>Your security is our top priority. We use advanced encryption to protect your data and never share it with third parties without consent.</p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question">What games can I play?</button>
+                  <div class="faq-answer">
+                    <p>You can enjoy a variety of games including Flappy Game, Tap the Bird, and exciting card games. Visit the <a href="#game">Games section</a> for more details.</p>
+                  </div>
+                </div>
+
+          <a href="#customer-service" class="faq-cta-button">Need Help?</a>
+    </div>
+
+    <!-- Referral Section -->
+    <div id="referral" class="section referral">
+      <h1 style="color:white;">Referral Program</h1>
+          <p style="color:white;">
+            Earn rewards by sharing the fun! Invite your friends to join Flappybet.gg and both of you can win exciting bonuses. 
+            It's simple: the more friends you refer, the more you earn!
+          </p>
+
+        <!-- Steps to Refer -->
+        <div class="referral-steps">
+          <!-- Step 1 --> 
+          <div class="step">
+            <img src="{% static 'images/share-link.jpg' %}" alt="Share Link" class="step-image">
+            <h2>Step 1: Share Your Referral Link</h2>
+            <p>Copy your unique referral link and share it with friends via social media, email, or messaging apps.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step">
+            <img src="{% static 'images/join-friends.jpg' %}" alt="Friends Join" class="step-image">
+            <h2>Step 2: Your Friends Join</h2>
+            <p>Once your friends sign up using your referral link, they will automatically become part of your referral network.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step">
+            <img src="{% static 'images/earn-rewards.jpg' %}" alt="Earn Rewards" class="step-image">
+            <h2>Step 3: Earn Rewards</h2>
+            <p>Every time your friends play, you earn bonuses! Keep referring and watch your rewards grow.</p>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="referral-action">
+          <a href="/Home/login/" class="cta-button">Get My Referral Link</a>
+          <p style="color:white;">Start earning rewards today by sharing Flappybet.gg with your friends!</p>
+        </div>
+    </div>
+
+    <!-- Customer Service Section -->
+    <div id="customer-service" class="section customer-service">
+      <h1 style="color:white;">Customer Service</h1>
+        <p style="color:white;">
+        At Flappybet.gg, we prioritize our users' satisfaction and aim to provide a seamless experience. If you have any questions, concerns, or feedback, our dedicated customer service team is here to assist you.
+        </p>
+
+        <!-- Support Options -->
+        <div class="support-options">
+          <!-- FAQ -->
+          <div class="support-card">
+            <img src="{% static 'images/faq.jpg' %}" alt="FAQ" class="support-image">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <p>Find answers to common questions about games, rewards, and account management in our FAQ section.</p>
+            <a href="#FAQ" class="cta-button">Visit FAQ</a>
+          </div>
+
+          <!-- Live Chat -->
+          <div class="support-card">
+            <img src="{% static 'images/live-chat.jpg' %}" alt="Live Chat" class="support-image">
+            <h2>Live Chat Support</h2>
+            <p>Need immediate assistance? Connect with our support agents through our 24/7 live chat for real-time help.</p>
+            <a href="/Home/live-chat/" class="cta-button">Start Live Chat</a>
+          </div>
+
+          <!-- Email Support -->
+          <div class="support-card">
+            <img src="{% static 'images/email-support.jpg' %}" alt="Email Support" class="support-image">
+            <h2>Email Support</h2>
+            <p>Have detailed questions or feedback? Reach out to us via email, and we'll respond within 24 hours.</p>
+            <a href="#form" class="cta-button">Email Us</a>
+          </div>
+
+          <!-- Community Forum -->
+          <div class="support-card">
+            <img src="{% static 'images/forum.jpg' %}" alt="Community Forum" class="support-image">
+            <h2>Community Forum</h2>
+            <p>Join our community forum to discuss strategies, share tips, and connect with fellow players.</p>
+            <a href="#home" class="cta-button">Join the Forum</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="form" class="section form">
+      <div class="contact-form">
+        <h2 style="color:white;">Contact Us</h2>
+        <p style="color:white;">
+          Use the form below to submit your queries or report any issues. Our team will get back to you as soon as possible.
+        </p>
+        <form action="/Home/contact/" method="post">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="name" style="color:white;">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" style="color:white;">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message" style="color:white;">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="cta-button">Submit</button>
+        </form>
+      </div>
+      <a href="#home">Back to Top</a>
+  </div>
+</body>
+</html>
+
+<script>
+  const faqQuestions = document.querySelectorAll('.faq-question');
+
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      const isVisible = answer.style.display === 'block';
+      
+      // Hide all answers
+      document.querySelectorAll('.faq-answer').forEach(item => item.style.display = 'none');
+      
+      // Toggle the clicked one
+      answer.style.display = isVisible ? 'none' : 'block';
+    });
+  });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        {% if messages %}
+            {% for message in messages %}
+                Swal.fire({
+                    icon: '{% if message.tags == "success" %}success{% elif message.tags == "error" %}error{% else %}info{% endif %}',
+                    title: '{{ message }}',
+                    confirmButtonText: 'OK'
+                });
+            {% endfor %}
+        {% endif %}
+    });
+
+</script>
+
+
+
+
+{% endblock %}
+  
